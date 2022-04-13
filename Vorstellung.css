@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Tenali+Ramakrishna&display=swap');
+
+*{
+
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --back: rgb(31, 17, 54);
+    --purple: rgb(123, 50, 182);
+}
+
+body{
+        background-color: var(--back);
+}
+
+header div{
+    position: absolute; 
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 5px black, 0 0 10px rgb(15, 0, 43);
+    font-size: 25px;
+    text-decoration: underline var(--purple);
+
+}
+header{
+    background-color: var(--back);
+    background-image: url(https://images.unsplash.com/photo-1639308776199-7df6d2d83449?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-position: center top; 
+
+}
+h2{
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    font-size: 2em;
+    text-decoration: underline var(--purple);
+}
+
+h3{
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    font-size: 1.7em;
+}
+
+.block{
+    margin: 50px 20% ; 
+}
+.gallerie-block{
+    margin: 50px 10% ; 
+}
+.gallerie-block .gallerie {
+    display: flex; flex-wrap: wrap; justify-content: center;
+  }
+.gallerie img{
+    object-fit: cover;
+    height: 300px;
+    flex: 25%;
+    min-width: 250px; max-width: 300px;;
+    padding: 20px 10px;
+}
+
+.Tabelle{
+    text-align: center; margin: 20px auto; width: 90%; min-width: 300px; border-collapse: collapse; overflow: hidden; box-shadow: 0 0 10px rgb(0, 0, 10); border-radius: 5px;
+}
+
+td{
+    padding: 10px 10px 10px 30px; background-color: var(--purple); text-align: left;
+}
+.Tabelle tbody tr{
+    border-bottom: 4px solid rgba(0, 0, 0, 0.2); 
+}
+
+.Tabelle tbody tr:last-of-type{
+    border-bottom: none;
+}
+
+.videos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.videos video{
+    padding: 10px;
+    flex: 30%;
+    object-fit: cover;
+}
+
+.bild img{
+        height: 400px; object-fit: cover; object-position: center;
+}
+.block .bild{
+    position: relative;
+    height: 400px;
+    background-image: url("bilder/NIG-Rock-Platz.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: var(--purple) 3px solid;
+    border-radius: 5px;
+}
+
+.ind{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100px;
+}
+.ind img{
+    position: absolute;
+    left: 7%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.623) 7px 7px 15px;
+    border-radius: 16px;
+}
+.ind p:before {
+    content: "";
+    display: block;
+    background-color: #FFFFFF;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0px;
+    left: -3%;
+  }
+.ind p{
+    position: absolute;
+    left: 30%;
+    align-self: center;
+}
+
+#back p{
+    position: absolute;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.774);
+}
+
+footer{
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    text-align: center;
+    font-size: larger;
+}
+
+@media screen and (max-width: 712px) 
+{
+    .gallerie img{
+        height: 220px;
+        flex: 10%;
+        min-width: 250px; max-width: 300px;;
+        padding: 10px 5px;
+    }
+    .block .gallerie{
+        margin: 20px 3% ;
+    }
+
+    .Tabelle, span ,p {
+        font-size: small;
+    }
+    .videos video{
+        width: 200px;
+        height: 150px; 
+    }
+    .ind img{
+        left: 0;
+        align-self: center;
+        height: 80%;
+    }
+}
