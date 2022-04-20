@@ -65,7 +65,8 @@ h3{
 }
 
 .Tabelle{
-    text-align: center; margin: 20px auto; width: 90%; min-width: 300px; border-collapse: collapse; overflow: hidden; box-shadow: 0 0 10px rgb(0, 0, 10); border-radius: 5px;
+    text-align: center; margin: 20px auto; width: 90%; min-width: 300px; 
+    border-collapse: collapse; overflow: hidden; box-shadow: 0 0 10px rgb(0, 0, 10); border-radius: 5px;
 }
 
 td{
@@ -137,6 +138,18 @@ td{
     position: absolute;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.774);
+}
+
+.links{
+    display: flex; flex-wrap: wrap; justify-content:center;
+}
+.links div{
+    padding: 20px;
+}
+.links div img:hover{
+    background-color: var(--purple);
+    border-radius: 20px;
+    box-shadow: black 5px 2px 5px;
 }
 
 footer{
